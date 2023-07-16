@@ -30,7 +30,7 @@ export const ContactForm = () => {
     alert( `${contact.number} already exists in the contacts!`);
     return;
   }
-    dispatch(addContact({ name: contact.name, number:contact.number, id: nanoid() }));
+    dispatch(addContact({ name: contact.name, number: contact.number, id: nanoid() }));
     setContact(initialState);
   };
 
